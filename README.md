@@ -25,52 +25,51 @@ npm install -D @types/cors @types/express @types/morgan concurrently nodemon
 
 ## Contenido del projecto
 
-| --------------- | ------------------------------------------------------ | -------------------------------------------- |
-| **Inicio - P1** | <span style="color: #fc7b03">TEORICO / PRACTICO</span> | Creación de `package.json`                   |
-| **Inicio - P1** | <span style="color: #94fc03">PRACTICO</span>           | Instalación dependencias necesarias           |
-| **Inicio - P1** | <span style="color: #94fc03">PRACTICO</span>           | Configuración `Express`                       |
-| **Ruteo - P2**  | <span style="color: #fc7b03">TEORICO / PRACTICO</span> | Aplicar un prefijo global para nuestra API   |
-| **Ruteo - P2**  | <span style="color: #94fc03">PRACTICO</span>           | Generando mi primera ruta                    |
-| **Ruteo - P2**  | <span style="color: #94fc03">PRACTICO</span>           | Uso de Postman para prueba de ruta           |
-
-| --------------- | ------------------------------------------------------ | ----------------------------------------------------------- |
-| **Ruteo**       | <span style="color: #94fc03">PRACTICO</span>           | Modalidad de ruta para aplicar en un servidor basado en POO |
-| **Ruteo**       | <span style="color: #94fc03">PRACTICO</span>           | Generando rutas extendidas de una ruta base                 |
-| **Controlador** | <span style="color: #fc7b03">TEORICO / PRACTICO</span> | Creación de controladores                   |
-
-| ---------- | ------------------------------------------------------ | -------------------------------------------------------- |
-| **Config** | <span style="color: #94fc03">PRACTICO</span>           | Configuracion de variables de entorno                    |
-| **Config** | <span style="color: #94fc03">PRACTICO</span>           | Declaracion de variables de entorno en nuestro server.ts |
-
-| ----------------------- | ------------------------------------------------------ | --------------------------------------------------------- |
-| **Docker Compose (DB)** | <span style="color: #94fc03">PRACTICO</span>           | Se crea `docker-compose.yml`                        |
-| **Docker Compose (DB)** | <span style="color: #fc7b03">TEORICO / PRACTICO</span> | Ejecuta docker-compose y comprobar la conexion |
-| **TypeORM (DB)**        | <span style="color: #94fc03">PRACTICO</span>           | Se crea getter de configuracion de conexion         |
-| **TypeORM (DB)**        | <span style="color: #94fc03">PRACTICO</span>           | Ejecutar la conexion en el server                    |
-| **TypeORM (DB)**        | <span style="color: #94fc03">PRACTICO</span>           | Crear entidad base con datos comunes              |
-| **TypeORM (DB)**        | <span style="color: #94fc03">PRACTICO</span>           | Creando entidad para base de datos |
-
-| **General** | <span style="color: #94fc03">PRACTICO</span> | Distribucion de proyecto de manera modular                          |
-| **Entidad** | <span style="color: #03d7fc">TEORICO</span>  | Relaciones (uno a muchos (N:1), uno a uno (1:1) y muchos a muchos (N:N)) |
-| **Entidad** | <span style="color: #94fc03">PRACTICO</span> | Users: Modificacion de entidad usuario                                              |
-| **Entidad** | <span style="color: #94fc03">PRACTICO</span> | Customer: Creacion de entidad y relaciones                                          |
-| **Entidad** | <span style="color: #94fc03">PRACTICO</span> | Products: Creacion de entidad y relaciones                                          |
-| **Entidad** | <span style="color: #94fc03">PRACTICO</span> | Categories: Creacion de entidad y relaciones                                        |
-| **Entidad** | <span style="color: #94fc03">PRACTICO</span> | Purchases: Creacion de entidad y relaciones                                         |
-| **Entidad** | <span style="color: #94fc03">PRACTICO</span> | `purchases_products`: Creacion de entidad N:N custom y relaciones                   |
-
-| ----------------------------------------------------------------------- |
-| **Entidad**     | <span style="color: #94fc03">PRACTICO</span>           | Instalando `class-transformer` para excluir datos en entidad    |
-| **Servicio**    | <span style="color: #fc7b03">TEORICO / PRACTICO</span> | Uso de servicios                                 |
-| **Servicio**    | <span style="color: #94fc03">PRACTICO</span>           | Instanciando metodos desplegados con funcion de repositorio con TypeORM |
-| **Servicio**    | <span style="color: #94fc03">PRACTICO</span>           | Creacion de `findAll` `findById` `create` `updtae` `delete`             |
-| **Controlador** | <span style="color: #94fc03">PRACTICO</span>           | Integracion de metodos instanciando servicios con los controladores     |
-
-| --------------- | -------------------------------------------- | ------------------------------------------------------------ |
-| **Controlador** | <span style="color: #94fc03">PRACTICO</span> | Crear enum de status code                            |
-| **Controlador** | <span style="color: #94fc03">PRACTICO</span> | Crear clase `HttpResponse` e integrando nuestro enum |
-| **Controlador** | <span style="color: #94fc03">PRACTICO</span> | Instanciar clase de respuesta en controlador |
-
-| **TypeORM**     | <span style="color: #94fc03">PRACTICO</span>           | Se crea `Data Source`                                                 |
-| **TypeORM**     | <span style="color: #94fc03">PRACTICO</span>           | Editar configuracion de `Data Source` y prepararla para migraciones |
-| **Migraciones** | <span style="color: #94fc03">PRACTICO</span>           | Creación de script de `typeorm` `migration:generate` y `migration:run` |
+#### Creación del proyecto
+**Creación de package.json**: Empezamos creando el archivo package.json que contendrá la configuración básica y las dependencias de nuestro proyecto.
+**Instalación de dependencias necesarias**: Procedemos a instalar todas las dependencias esenciales para nuestro proyecto utilizando npm o yarn.
+#### Configuración del servidor
+**Configuración Express**: Configuramos el framework Express para manejar las rutas y las peticiones HTTP.
+Aplicar un prefijo global para nuestra API: Definimos un prefijo global que será utilizado para todas las rutas de nuestra API.
+**Generando mi primera ruta**: Creamos nuestra primera ruta para comprobar que el servidor Express está funcionando correctamente.
+**Uso de Postman para prueba de ruta**: Utilizamos Postman para probar la ruta creada y asegurarnos de que devuelve la respuesta esperada.
+Modalidad de ruta para aplicar en un servidor basado en POO: Implementamos las rutas siguiendo una modalidad de Programación Orientada a Objetos (POO).
+**Generando rutas extendidas de una ruta base**: Extenderemos nuestra ruta base para incluir subrutas y manejar diferentes endpoints.
+#### Controladores y variables de entorno
+**Creación de controladores**: Creamos controladores para gestionar la lógica de negocio de nuestras rutas.
+**Configuración de variables de entorno**: Configuramos variables de entorno para manejar configuraciones sensibles como claves y URLs de base de datos.
+**Declaración de variables de entorno en nuestro server.ts**: Declaramos y utilizamos las variables de entorno en el archivo server.ts.
+#### Configuración de Docker
+**Se crea docker-compose.yml**: Creamos el archivo docker-compose.yml para definir los servicios que componen nuestra aplicación, incluyendo la base de datos.
+**Ejecuta docker-compose y comprobar la conexión**: Ejecutamos docker-compose y comprobamos que todos los servicios se conectan correctamente.
+**Se crea getter de configuración de conexión**: Creamos un getter para manejar la configuración de la conexión a la base de datos.
+**Ejecutar la conexión en el servidor**: Establecemos la conexión a la base de datos desde nuestro servidor.
+#### Modelado de datos
+**Crear entidad base con datos comunes**: Definimos una entidad base que contiene los campos comunes a todas nuestras entidades.
+**Creando entidad para base de datos**: Creamos entidades específicas para nuestra base de datos.
+**Distribución de proyecto de manera modular**: Organizamos nuestro proyecto de manera modular para mantener un código limpio y mantenible.
+**Relaciones (uno a muchos (N:1), uno a uno (1:1) y muchos a muchos (N
+))**: Definimos las relaciones entre nuestras entidades, incluyendo relaciones uno a muchos, uno a uno y muchos a muchos.
+#### Entidades específicas
+**Users**: Modificación de entidad usuario: Modificamos la entidad usuario para incluir campos y relaciones necesarias.
+**Customer**: Creación de entidad y relaciones: Creamos la entidad Customer y definimos sus relaciones con otras entidades.
+**Products**: Creación de entidad y relaciones: Definimos la entidad Products y sus respectivas relaciones.
+**Categories**: Creación de entidad y relaciones: Creamos la entidad Categories y establecemos sus relaciones.
+**Purchases**: Creación de entidad y relaciones: Definimos la entidad Purchases y sus relaciones.
+**purchases_products**: Creación de entidad N
+**custom y relaciones**: Creamos una entidad personalizada para gestionar una relación muchos a muchos entre Purchases y Products.
+#### Mejoras y servicios
+**Instalando class-transformer para excluir datos en entidad**: Instalamos class-transformer para excluir datos sensibles o no necesarios en nuestras entidades.
+**Uso de servicios**: Implementamos servicios para manejar la lógica de negocio y las operaciones con la base de datos.
+**Instanciando métodos desplegados con función de repositorio con TypeORM**: Utilizamos los métodos proporcionados por TypeORM para manejar las operaciones CRUD de nuestras entidades.
+#### Métodos y controladores
+**Creación de findAll, findById, create, update, delete**: Creamos métodos CRUD (findAll, findById, create, update, delete) para nuestras entidades.
+Integración de métodos instanciando servicios con los controladores: Integramos los métodos de los servicios con nuestros controladores para manejar las rutas.
+#### Respuestas y status codes
+**Crear enum de status code**: Definimos un enum para manejar los códigos de estado HTTP.
+**Crear clase HttpResponse e integrando nuestro enum**: Creamos una clase HttpResponse que utiliza nuestro enum para gestionar las respuestas.
+**Instanciar clase de respuesta en controlador**: Utilizamos la clase de respuesta en nuestros controladores para devolver respuestas estandarizadas.
+#### Configuración de TypeORM
+**Se crea Data Source**: Configuramos la fuente de datos (Data Source) para TypeORM.
+**Editar configuración de Data Source y prepararla para migraciones**: Ajustamos la configuración de la fuente de datos y la preparamos para ejecutar migraciones.
+**Creación de script de typeorm migration:generate y migration:run**: Creamos y ejecutamos scripts de migración utilizando TypeORM.
