@@ -33,7 +33,7 @@ npm install -D @types/cors @types/express @types/morgan concurrently nodemon
 Aplicar un prefijo global para nuestra API: Definimos un prefijo global que será utilizado para todas las rutas de nuestra API.
 **Generando mi primera ruta**: Creamos nuestra primera ruta para comprobar que el servidor Express está funcionando correctamente.
 **Uso de Postman para prueba de ruta**: Utilizamos Postman para probar la ruta creada y asegurarnos de que devuelve la respuesta esperada.
-Modalidad de ruta para aplicar en un servidor basado en POO: Implementamos las rutas siguiendo una modalidad de Programación Orientada a Objetos (POO).
+**Modalidad de ruta para aplicar en un servidor basado en POO**: Implementamos las rutas siguiendo una modalidad de Programación Orientada a Objetos (POO).
 **Generando rutas extendidas de una ruta base**: Extenderemos nuestra ruta base para incluir subrutas y manejar diferentes endpoints.
 #### Controladores y variables de entorno
 **Creación de controladores**: Creamos controladores para gestionar la lógica de negocio de nuestras rutas.
