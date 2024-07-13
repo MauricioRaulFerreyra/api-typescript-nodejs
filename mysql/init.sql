@@ -1,0 +1,15 @@
+CREATE DATABASE IF NOT EXISTS mauri_db;
+-- USE mauri_db;
+
+-- CREATE TABLE IF NOT EXISTS user (
+--     id CHAR(46) NOT NULL PRIMARY KEY,
+--     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+--     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+--     name VARCHAR(50) NOT NULL,
+--     last_name VARCHAR(30) NOT NULL,
+--     username VARCHAR(30) NOT NULL UNIQUE,
+--     email VARCHAR(50) NOT NULL UNIQUE,
+--     password VARCHAR(30) NOT NULL,
+--     city VARCHAR(50),
+--     province VARCHAR(50)
+-- );

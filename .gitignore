@@ -1,0 +1,6 @@
+APUNTES.txt
+node_modules
+/dist
+/.vscode
+src/migrations/*
+docker-compose.yml
